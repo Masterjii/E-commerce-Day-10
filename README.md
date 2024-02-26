@@ -39,9 +39,10 @@ The E-commerce App follows the MVC (Model-View-Controller) architecture, ensurin
     * **HTML5, CSS3, JavaScript (ES6+)**
     * **Framework:**  Bootstrap 5, AOS, Starability.css (star rating)
     * **Additional Libraries:**
-        * `Font Awesome`
+        * `Font Awesome` (Icons)
+        * `Unplash` (Pictures)
         * `Font Awesome Animation`
-        * `Google Fonts`
+        * `Google Fonts` (Fonts)
 * **Version Control:** Git
 * **Payment Gateway:** Stripe
 * **Authentication:** Passport.js
