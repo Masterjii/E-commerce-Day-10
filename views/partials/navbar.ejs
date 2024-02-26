@@ -1,0 +1,61 @@
+
+
+
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-light" href="/products"> <i class="fa-brands fa-shopify fa-bounce fa-xl"> </i> Store </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+
+          <% if(currentUser && currentUser.role === "seller"){ %>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/products/new">Add</a>
+            </li>
+          <% } %>
+          
+          <form class="form-inline mx-3">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Products here." aria-label="Search">
+          </form>
+        
+        </ul>
+        
+        <div class="d-flex" role="search">
+        <%  if(!currentUser){ %>
+            <a class="mx-2" href="/login"><button class="btn btn-outline-info" type="submit">Login</button></a>
+        <%  } else { %>
+          <a href="#" class="nav-link text-capitalize text-light">Hello <%=currentUser.username%></i> 
+            <a href="/user/cart" class="nav-link text-light"><i class="fas fa-shopping-cart fa-lg"></i> 
+            <sup><span class="badge bg-danger"><%=currentUser.cart.length%></span></sup> 
+          </a>
+            <a class="mx-2" href="/logout"><button class="btn btn-outline-info" type="submit">Logout</button></a>
+        <%  } %>
+        </div>
+      </div>
+    </div>
+</nav>
+</header>
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+

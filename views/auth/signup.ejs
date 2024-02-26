@@ -1,0 +1,58 @@
+
+<%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+
+
+<main>
+  <div class="signup container-fluid vh-100 d-flex align-items-center justify-content-center" style="width: 36rem;">
+    <div class="card rounded-3 shadow-sm">
+      <div class="card-body">
+        <h4 class="text-center mb-4">Sign Up</h4>
+        <form action="/register" method="POST">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" id="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <input type="text" name="gender" class="form-control" id="gender">
+          </div>
+
+          <div class="mb-3">
+            <h6 class="mt-2">Want to register as ?</h6>
+            <div>
+              <label for="role" class="form-label">Buyer</label>
+              <input type="radio" name="role" class="form-check-input" id="role" placeholder="role of the user" value="buyer" required>
+            </div>
+            <div>
+              <label for="role" class="form-label">Seller</label>
+              <input type="radio" name="role" class="form-check-input" id="role" placeholder="role of the user" value="seller" required>
+            </div>
+            
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="password" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <p>Already have an account ?<a href="/login" class="btn btn-link" >Login Now</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%-include('../partials/footer.ejs')%>
+

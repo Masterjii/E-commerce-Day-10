@@ -1,0 +1,38 @@
+
+<%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+
+
+<main>
+
+    <%-include('../flash.ejs')%>
+
+  <div class="signup container-fluid vh-100 d-flex align-items-center justify-content-center" style="width: 36rem;">
+    <div class="card rounded-3 shadow-sm">
+      <div class="card-body">
+        <h4 class="text-center mb-4">Log In</h4>
+        <form action="/login" method="POST">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" id="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="password" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Log in</button>
+            <p>Don't have an account ?<a href="/register" class="btn btn-link" >Signup Now</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%-include('../partials/footer.ejs')%>
+

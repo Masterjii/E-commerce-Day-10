@@ -1,0 +1,88 @@
+
+<%-include('./partials/header')%> 
+<%-include('./partials/navbar')%>
+
+<main>
+  <%-include('./flash.ejs')%>
+
+  <div
+    class="signup container-fluid vh-100 d-flex align-items-center justify-content-center"
+    style="width: 36rem;"
+  >
+    <div class="card rounded-3 shadow-sm">
+      <div class="card-body">
+        <h4 class="text-center mb-4">Added Your Product Easily</h4>
+        <form
+          class="needs-validation"
+          action="/products"
+          method="POST"
+          novalidate
+        >
+          <div class="mb-3">
+            <label for="naam" class="form-label">Product Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="naam"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please choose a Product Name</div>
+          </div>
+          <div class="mb-3">
+            <label for="img" class="form-label">Drop Your Product Image</label>
+            <input
+              type="text"
+              name="img"
+              class="form-control"
+              id="img"
+              placeholder="URL"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input
+              type="text"
+              name="price"
+              class="form-control"
+              id="price"
+              placeholder="₹"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please choose a Product Price</div>
+          </div>
+
+          <div class="mb-3">
+            <h6 for="desc">Description</h6>
+            <textarea name="desc" id="desc" rows="5" cols="63"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+              required
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success">Add Product</button>
+            <div id="emailHelp" class="form-text">
+              We'll never share your Data with anyone else.
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="/js/script.js"></script>
+<%-include('./partials/footer.ejs')%>
+
+

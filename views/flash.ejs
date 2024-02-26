@@ -1,0 +1,38 @@
+ 
+ 
+ 
+ 
+ 
+ <!-- For Success -->
+
+ <% if(success && success.length){ %>
+    <div
+      class="alert alert-success alert-dismissible fade show"
+      role="alert"
+    >
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+      <strong><%=success%></strong>
+    </div>
+<% } %>
+
+<!-- For Error -->
+
+<% if(error && error.length){ %>
+    <div
+      class="alert alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+      <strong><%=error%></strong>
+    </div>
+<% } %>

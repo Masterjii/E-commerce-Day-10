@@ -1,0 +1,13 @@
+
+<%-include('./partials/header')%>
+<%-include('./partials/navbar')%>
+<%-include('./flash.ejs')%>
+
+        <main style="height: 78vh;">
+            <h1>Error Message</h1>
+            <div class="alert alert-danger" role="alert">
+                <%=err%> 
+              </div>
+        </main>
+       
+        <%-include('./partials/footer.ejs')%>
