@@ -13,7 +13,7 @@
 
 ## Description
 
-Myshop is a simple web app designed for managing and displaying product information. The application allows users to view product details such as name, image, prices, and descriptions. Additionally, it provides essential functionalities for managing the product catalog.
+Store is a simple web app designed for managing and displaying product information. The application allows users to view product details such as name, image, prices, and descriptions. Additionally, it provides essential functionalities for managing the product catalog.
 
 ## Architecture
 
@@ -22,11 +22,12 @@ The E-commerce App follows the MVC (Model-View-Controller) architecture, ensurin
 ## Technologies and Tools Used
 
 * **Backend:**
-    * **Database:** MongoDB (MongoDB Atlas)
+    * **Database:** MongoDB
     * **Framework:** Express.js framework for building RESTful APIs,Error Handling, Router, Templating .
     * **Runtime:** Node.js
     * **ORM:** Mongoose
     * **Templating:** EJS
+    * **Cloud Service:** MongoDB Atlas
     * **Additional Libraries:**
         * `Axios`
         * `connect-flash`
@@ -36,7 +37,11 @@ The E-commerce App follows the MVC (Model-View-Controller) architecture, ensurin
         * `nodemon` (development)
 * **Frontend:**
     * **HTML5, CSS3, JavaScript (ES6+)**
-    * **Framework:**  Bootstrap 5, Starability.css (star rating)
+    * **Framework:**  Bootstrap 5, AOS, Starability.css (star rating)
+    * **Additional Libraries:**
+        * `Font Awesome`
+        * `Font Awesome Animation`
+        * `Google Fonts`
 * **Version Control:** Git
 * **Payment Gateway:** Stripe
 * **Authentication:** Passport.js
@@ -67,8 +72,14 @@ See the action: [Live Demo](https://shop-he5h.onrender.com)
 
 ## Screenshots
 
-![MyShop](https://github.com/Masterjii/shop-2/assets/122020633/a9d39ffb-b58d-4e7d-ba2f-bb72aac14114)
-![screencapture-shop-he5h-onrender-2024-02-08-20_58_46](https://github.com/Masterjii/shop-2/assets/122020633/1fb79b92-f1e8-4089-b00f-1091426d7afa)
+**Home Page**
+
+![Home](https://github.com/Masterjii/E-commerce-Day-10/assets/122020633/5c5ce769-b561-44dd-8a47-a453bb4d0e08)
+
+
+**Landing Page**
+
+![Landing](https://github.com/Masterjii/E-commerce-Day-10/assets/122020633/0966035b-a506-4a1e-a4f4-ef45147594b1)
 
 ## Principles
 
