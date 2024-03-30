@@ -10,6 +10,8 @@
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
+    - [Run the Application](#run-the-application)
+    - [Additional Documentation](#additional-documentation)
 
 ## Description
 
@@ -107,3 +109,27 @@ Follow these instructions to get a copy of the project up and running on your lo
 
    ```bash
    git clone https://github.com/Masterjii/E-commerce-Day-10.git
+2. Navigate to the project directory:
+
+   ```bash
+   cd E-commerce-Day-10
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+
+### Run the Application 
+
+1. Start the server:
+
+   ```bash
+   npm start
+
+2. Open a web browser and navigate to http://localhost:8080 to view the application.
+
+### Additional Documentation
+
+   ```bash
+   This README.md file provides a comprehensive overview of the E-Commerce-App, including its description, architecture, technologies used, features, principles, how to get started, and additional documentation.
+
