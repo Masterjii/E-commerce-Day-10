@@ -27,7 +27,7 @@ mongoose.set('strictQuery', true);
 let url = 'mongodb+srv://MyShop:MyShop123@cluster0.taifmws.mongodb.net/MyShopretryWrites=true&w=majority';    
 
 mongoose
-.connect(url)   // MongoDB Atlas
+.connect(url || 'mongodb://127.0.0.1:27017/BigProject')   // MongoDB Atlas
 .then(()=>{console.log("DB connected Successfuly")})
 .catch((err)=>{console.log("error is:", err)})
 
@@ -89,11 +89,11 @@ app.use(authRoutes);
 app.use(cartRoutes);
 app.use(productApi);
 
-//  Connect env files 
-app.listen(process.env.PORT , ()=>{
+//  Connect env files
+let PORT = process.env.PORT || 8080;
+app.listen(PORT , ()=>{
     console.log(`server is connected at port: ${process.env.PORT}`);
 })
-
 
 
 
